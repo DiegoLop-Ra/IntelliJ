@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.junit.jupiter.api.TestInstance;
 
+import static org,junit.jupiter.api.Assertions.assertEquals;
+
 
 public class SeleniumTest {
     Private BrowserGetter browserGetter = new BrowserGetter();
@@ -25,7 +27,10 @@ public class SeleniumTest {
 
     @Test
     public void openThePageandCheckTheTitle(){
-        String excpectedTitle = 'Example Title'
+        String excpectedTitle = "Example Title";
+        driver.get("https://www.example.com");
+        assertEquals(expectedTitle, driver.getTitle());
+        Assertions.assertEquals(expected: 1, expected: 2);
 
     }
 }
