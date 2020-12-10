@@ -6,9 +6,10 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.junit.jupiter.api.TestInstance;
 
-import static org,junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.TestInstamce.Lifecycle.PER_CLASS
 
-
+@TestInstance(PER_CLASS)
 public class SeleniumTest {
     Private BrowserGetter browserGetter = new BrowserGetter();
     Private WebDriver driver;
