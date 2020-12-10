@@ -13,11 +13,13 @@ public class SeleniumTest {
 
     @BeforeAll
     public void @BeforeAll(){
+        driver = browserGetter.getChromeDriver();
 
     }
 
     @AfterAll
     public void afterAll(){
+        driver.quit();
 
     }
 
