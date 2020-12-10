@@ -4,7 +4,7 @@ public class WithConfigurationTest{
 
     @Test
     public void firstAssertion() {
-        assertEquals(1, 1);
+        assertEquals(expected: 2, actual:2);
     }
 
     @Test
