@@ -26,9 +26,18 @@ public class SeleniumTest {
     }
 
     @Test
-    public void openThePageandCheckTheTitle(){
-        String excpectedTitle = "Example Title";
+    public void openTheComPageAndCheckTheTitle(){
+        String excpectedComTitle = "Example Title";
         driver.get("https://www.example.com");
+        assertEquals(expectedTitle, driver.getTitle());
+        Assertions.assertEquals(expected: 1, expected: 2);
+
+    }
+
+    @Test
+    public void openTheOrgPageAndCheckTheTitle(){
+        String excpectedOrgTitle = "Example Title";
+        driver.get("https://www.example.org");
         assertEquals(expectedTitle, driver.getTitle());
         Assertions.assertEquals(expected: 1, expected: 2);
 
